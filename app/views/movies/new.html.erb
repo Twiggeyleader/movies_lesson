@@ -1,0 +1,27 @@
+<h1>Add a new Moive!</h1>
+
+<%= form_for @movie do |f| %>
+  
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+   <div>
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </div>
+
+   <div>
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+  </div>
+
+   <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <%= f.submit "Add this Movie!"%>
+
+<% end %>
